@@ -1,0 +1,162 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #5433ff;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#a5fecb), color-stop(#20bdff), to(#5433ff));
+  background: linear-gradient(to right, #a5fecb, #20bdff, #5433ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+
+.body__container {
+  min-height: 470px;
+  width: 780px;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.form__container {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  background: rgba(8, 3, 8, 0.1);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+}
+
+.form__container--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+  font-size: 1rem;
+  text-align: center;
+  height: 100%;
+}
+
+.form__container--form--heading {
+  font-size: 38px;
+  font-family: DotGothic16;
+  padding: 10px;
+  color: #2210ff;
+}
+
+.form__container--form--fileds {
+  margin: 10px;
+  width: 100%;
+  border: none;
+  padding: 14px 21px;
+  margin: 8px 0;
+  border-radius: 5px;
+}
+
+.form__signin--btn {
+  background-color: #2210ff;
+  color: white;
+  margin: 10px;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  padding: 10px;
+  border-radius: 10px;
+  padding: 7px 16px;
+  font-weight: 800;
+  -webkit-box-shadow: 7px 6px rgba(0, 0, 0, 0.13);
+          box-shadow: 7px 6px rgba(0, 0, 0, 0.13);
+  border-color: #06ffea;
+}
+
+.form__signin--btn:hover {
+  background-color: #4638db;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 7px 6px rgba(0, 0, 0, 0.13);
+          box-shadow: 7px 6px rgba(0, 0, 0, 0.13);
+}
+
+@-webkit-keyframes errorAnimation {
+  from {
+  }
+  50% {
+    -webkit-transform: translate(-100px, -10px);
+            transform: translate(-100px, -10px);
+  }
+  to {
+    -webkit-transform: translate(-100px, 0);
+            transform: translate(-100px, 0);
+  }
+}
+
+@keyframes errorAnimation {
+  from {
+  }
+  50% {
+    -webkit-transform: translate(-100px, -10px);
+            transform: translate(-100px, -10px);
+  }
+  to {
+    -webkit-transform: translate(-100px, 0);
+            transform: translate(-100px, 0);
+  }
+}
+
+.error {
+  text-transform: lowercase;
+  color: red;
+  font-size: 0.8rem;
+  -webkit-transform: translate(-112px, -5px);
+          transform: translate(-112px, -5px);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  background-image: url("../assets/—Pngtree—astronaut in spacesuit on space_5057901.png");
+  background-position: center;
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */
